@@ -64,7 +64,7 @@ export const UserFavButton = styled.TouchableOpacity`
     width: 40px;
     height: 40px;
     background-color: #fff;
-    border: 2px solid #999;
+    border: 1px solid #333;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@ export const ServiceArea = styled.View`
 export const ServiceTitle = styled.Text`
     font-size: 18px;
     font-weight: bold;
-    color: blue;
+    color: #004AAD;
     margin-left: 30px;
     margin-bottom: 20px;
 `;
@@ -98,14 +98,14 @@ export const ServiceInfo = styled.View`
 export const ServiceName = styled.Text`
     font-size: 16px;
     font-weight: bold;
-    color: blue;
+    color: #004AAD;
 `;
 export const ServicePrice = styled.Text`
     font-size: 14px;
-    color: blue;
+    color: #000;
 `;
 export const ServiceChooseButton = styled.TouchableOpacity`
-    background-color: blue;
+    background-color: #004AAD;
     border-radius: 10px;
     padding: 10px 15px;
 `;
@@ -120,7 +120,7 @@ export const TestimonialArea = styled.View`
     margin-bottom: 50px;
 `;
 export const TestimonialItem = styled.View`
-    background-color: #000;
+    background-color: #004AAD;
     padding: 15px;
     border-radius: 10px;
     height: 110px;

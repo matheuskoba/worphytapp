@@ -45,7 +45,7 @@ export default ({data}) => {
             id: data.id,
             avatar: data.avatar,
             name: data.name,
-            stars: data.stars
+            stars: data.stars,
         });
     }
 
