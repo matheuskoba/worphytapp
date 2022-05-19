@@ -114,14 +114,39 @@ export default {
         const token = await AsyncStorage.getItem('token');
         const req = await fetch(`${BASE_API}/search?q=${personalName}&token=${token}`);
         const json = await req.json();
-        console.log(json);
         return json;
     },
     getFavorites: async () => {
         const token = await AsyncStorage.getItem('token');
         const req = await fetch(`${BASE_API}/user/favorites?token=${token}`);
         const json = await req.json();
-        console.log(json);
+        return json;
+    },
+    getAppointments: async () => {
+        const token = await AsyncStorage.getItem('token');
+        const req = await fetch(`${BASE_API}/user/appointments?token=${token}`);
+        const json = await req.json();
+        return json;
+    },
+    updateUser: async (body) => {
+
+        const token = await AsyncStorage.getItem('token');
+        body.token = token;
+        const req = await fetch(`${BASE_API}/user`,{
+            method: 'PUT',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body)
+        });
+        const json = await req.json();
+        return json;
+    },
+    getUser: async () => {
+        const token = await AsyncStorage.getItem('token');
+        const req = await fetch(`${BASE_API}/user?token=${token}`);
+        const json = await req.json();
         return json;
     },
 
