@@ -7,7 +7,7 @@ import {
     EmptyWarning
 } from './styles';
 
-import AppointmentItem from '../../components/AppointmentItem';
+// import AppointmentItem from '../../components/AppointmentItem';
 import Api from "../../Api";
 
 export default () => {
@@ -45,9 +45,9 @@ export default () => {
                 }
 
                 <ListArea>
-                    {list.map((item, k)=>(
+                    {/* {list.map((item, k)=>(
                         <AppointmentItem key={k} data={item}  />
-                    ))}
+                    ))} */}
                 </ListArea>
             </Scroller>
 

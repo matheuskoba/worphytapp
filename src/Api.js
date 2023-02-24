@@ -1,5 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
+//const BASE_API = 'https://api.b7web.com.br/devbarber/api';
 const BASE_API = 'https://api.b7web.com.br/devbarber/api';
 
 export default {
